@@ -1,0 +1,143 @@
+body{
+  background-color: lightblue;
+  margin: 0px;
+}
+main{
+  margin: 10px;
+}
+.slot-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.row-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.contacts-wrapper{
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
+  color: white;
+}
+.icon-wrapper{
+  display: flex;
+  justify-content: left;
+}
+.navbar ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: cornflowerblue;
+
+}
+.navbar a{
+  color: white;
+  text-align: center;
+  padding:15px;
+  text-decoration: none;
+  display: block;
+}
+.navbar a:hover{
+background-color: rgb(71, 105, 168);
+}
+.ul-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  color: lightblue;
+  padding-left: 15px;
+}
+.button-wrapper{
+  display: flex;
+  justify-content: right;
+}
+button{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  border-radius: 20px;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 85px;
+  
+}
+button:hover{
+  
+  border-radius: 20px;
+  background-color: rgb(68, 102, 166);
+  color: white;
+  border: none;
+}
+button:active{
+  padding-left: 30px;
+  border-radius: 20px;
+  background-color: rgb(44, 66, 107);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+h1{
+  display: flex;
+  justify-content: center;
+
+}
+h6{
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+.img-wrapper-index{
+  width: 400px;
+  height: 250px;
+}
+.img-wrapper-batman{
+  width: 700px;
+  height: 450px;
+}
+.img-wrapper-sudoku{
+  width: 450px;
+  height: 550px;
+}
+.bat-wrapper{
+  display: flex;
+  justify-content: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ background-color: rgb(99, 146, 233);
+ border-radius: 20px;
+ box-shadow: 10px 5px 5px rgba(44, 66, 107, 0.578);;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ width: 500px;
+ height: 270px;
+ font-family:'Times New Roman', Times, serif
+}
+.form-buttons{
+  background-color: rgb(26, 54, 105);
+  color: white;
+  border: none;
+  border-radius: 13px;
+  width: 70px;
+  height: 25px;
+}
+.form-buttons:hover{
+  background-color: rgb(13, 29, 57);
+}
+.form-buttons:active{
+  background-color: rgb(20, 43, 85);
+}
+.form-boxes{
+  border:rgb(66, 97, 154);
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.702);
+  padding: 5px;
+}
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
