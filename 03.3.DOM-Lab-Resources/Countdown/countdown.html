@@ -4,14 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Countdown</title>
 </head>
 
 <body>
     <input type="text" id="time" style="border:3px solid blue; text-align:center; font-size:2em;" disabled="true" />
     <script>
         window.onload = function() {
-            countdown(600);
+          //  countdown(600);
+            let time = document.querySelector('#time');
+            let count = 0;
+            let minutes = 10;
+            let second = 60;
+            setInterval(() => {
+                if(sec == -1){
+                    sec = 60;
+                    minutes -= 1;
+                }
+                sec --;
+               time.value = ``;
+            }, 1000)
         }
     </script>
 </body>

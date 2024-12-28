@@ -15,26 +15,31 @@
             <th>Town</th>
         </tr>
         <tr>
-            <td>Eve</td>
+            <td>Antonia</td>
             <td>Sofia</td>
         </tr>
         <tr>
-            <td>Nick</td>
+            <td>Miri Biri</td>
             <td>Varna</td>
         </tr>
         <tr>
-            <td>Didi</td>
+            <td>cousin Borko</td>
             <td>Ruse</td>
         </tr>
         <tr>
-            <td>Tedy</td>
-            <td>Varna</td>
+            <td>miss Tedy</td>
+            <td>Vraca</td>
         </tr>
     </table>
     <button onclick="colorize()">Colorize</button>
     <script>
         function colorize() {
-            // TODO
+            let tr = document.querySelectorAll('tr');
+            for(let i = 1; i < tr.length; i++){
+                if(i % 2 == 1){
+                    tr[i].style.backgroundColor = 'teal';
+                }
+            }
         }
     </script>
 </body>
