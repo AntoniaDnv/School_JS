@@ -5,7 +5,7 @@ function deleteByEmail() {
     array.forEach(el => {
         if(el.textContent == input.value){
             let curEl = el.parentElement;
-            table.removeChild(curEl);
+            curEl.remove();
         }
         
     });
