@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
          const taskItem = document.createElement("li");
          taskItem.className = "task-Item";
          if(isCompleted==true){
+            taskItem.classList.remove("task-Item");
              taskItem.classList.add("completed");
          }
       
@@ -38,9 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
          const deleteButton = document.createElement("button");
          deleteButton.textContent = "delete";
          deleteButton.className = "delete-button";
+         taskItem.appendChild(deleteButton);
          deleteButton.addEventListener("click", ()=>{
             taskItem.remove();
              // saveTasks();
+            
          });
 
          
