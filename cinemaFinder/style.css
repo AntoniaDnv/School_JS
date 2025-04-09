@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results, #favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.movie {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    width: 180px;
+    padding: 15px;
+    transition: transform 0.2s ease;
+}
+
+.movie:hover {
+    transform: scale(1.03);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.movie button {
+    background-color: #28a745;
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+.movie button:hover {
+    background-color: #218838;
+}
+
+.movie button:last-child {
+    background-color: #dc3545;
+}
+
+.movie button:last-child:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
