@@ -39,6 +39,16 @@ function displayMovies(movies) {
         resultsDiv.appendChild(movieElement);
     });
 }
+let favoriteMovies = JSON.parse(localStorage.getItem("favorites")) || [];
+function addToFavorites(id, title, poster) {
+    if(favoritesDiv.includes(id, 0) == true){
+
+    }
+    else{
+        alert('Movie is already aded!');
+        return;
+    }
+}
 
 searchBtn.addEventListener("click", searchMovies);
 
