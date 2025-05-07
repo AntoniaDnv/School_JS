@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Викторина</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Wellcome to the ultimate Quiz</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis voluptatibus la
-        bore ratione optio beatae corporis earum odio laborum vero quos, cumque 
-        doloribus, adipisci voluptates qui neque explicabo eum. Labore, eius?</p>
+  <div id="quizContainer">
+    <h1>Викторина</h1>
+    <div id="quizItem"></div>
+    <div id="navigationButtons">
+      <button id="prevBtn">Предишен</button>
+      <button id="checkBtn">Провери</button>
+      <button id="nextBtn">Следващ</button>
+    </div>
+    <div id="quizResult"></div>
+  </div>
+  <script src="quizData.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
