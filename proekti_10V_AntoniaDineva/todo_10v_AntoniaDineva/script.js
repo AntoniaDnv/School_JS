@@ -82,6 +82,30 @@ function loadTasks() {
          
          taskList.appendChild(taskItem);
         // saveTasks();
+        // FILTER BUTTON LOGIC (replace the old one)
+document.querySelector(".filter-container").addEventListener("click", (e) => {
+    if (e.target.tagName !== "BUTTON") return; // make sure a button was clicked
+
+    const filter = e.target.dataset.filter;
+    const allTasks = document.querySelectorAll("#tasks li");
+
+    allTasks.forEach(task => {
+        const isCompleted = task.classList.contains("completed");
+
+        switch (filter) {
+            case "all":
+                task.style.display = "flex";
+                break;
+            case "completed":
+                task.style.display = isCompleted ? "flex" : "none";
+                break;
+            case "uncompleted":
+                task.style.display = !isCompleted ? "flex" : "none";
+                break;
+        }
+    });
+});
+
      }
 });
 

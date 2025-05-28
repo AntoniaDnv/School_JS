@@ -100,10 +100,11 @@ h1 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #e0e0e0;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
 .filter-container button:hover {
-  background-color: #bbb;
+  background-color: #ccc;
 }
-
