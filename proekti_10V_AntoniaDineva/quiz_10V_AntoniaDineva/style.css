@@ -1,47 +1,39 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  #quizContainer {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: center;
-  }
-  
-  #quizItem {
-    margin-bottom: 20px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    margin: 5px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #0056b3;
-  }
-  
-  input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  #quizResult {
-    margin-top: 20px;
-    font-weight: bold;
-    color: green;
-  }
-  
+#quizContainer {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: sans-serif;
+  border: 2px solid #333;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.option {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.option:hover {
+  background: #f0f0f0;
+}
+
+#navigationButtons button,
+#restartBtn {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#navigationButtons button:hover,
+#restartBtn:hover {
+  background-color: #ddd;
+}
+
+#statsPanel {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+}

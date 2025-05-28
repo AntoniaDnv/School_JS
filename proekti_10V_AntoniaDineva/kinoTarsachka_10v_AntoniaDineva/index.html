@@ -7,12 +7,40 @@
     <title>Кино Търсачка</title>
 </head>
 <body>
-    <h1>Кино Търсачка</h1>
-    <input type="text" id="searchInput" placeholder="Въведете име на филм">
-    <button id="searchBtn">Търси</button>
-    <div id="results"></div>
-    <h2>Любими филми</h2>
-    <div id="favorites"></div>
+    <div class="container">
+        <h1>Кино Търсачка</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Въведете име на филм">
+            <button id="searchBtn">Търси</button>
+        </div>
+        <div id="results"></div>
+        
+        <div id="movieDetailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="movieDetails"></div>
+                <div class="reviews-section">
+                    <h3>Рецензии</h3>
+                    <form id="reviewForm">
+                        <textarea id="reviewText" placeholder="Напишете вашата рецензия..." required></textarea>
+                        <select id="reviewRating" required>
+                            <option value="" disabled selected>Изберете оценка</option>
+                            <option value="1">1 звезда</option>
+                            <option value="2">2 звезди</option>
+                            <option value="3">3 звезди</option>
+                            <option value="4">4 звезди</option>
+                            <option value="5">5 звезди</option>
+                        </select>
+                        <button type="submit">Добави рецензия</button>
+                    </form>
+                    <div id="reviewsList"></div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Любими филми</h2>
+        <div id="favorites"></div>
+    </div>
     
     <script src="script.js"></script>
 </body>

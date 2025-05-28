@@ -1,15 +1,109 @@
+/* style.css */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
-.task-Item{
-    background-color: red;
+
+h1 {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  color: #333;
+  text-shadow: 1px 1px 0 #fff;
 }
-.completed{
-    background-color: green;
+
+.outer-box-todo-list {
+  background: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
 }
+
+.outer-box-todo-list:hover {
+  transform: translateY(-5px);
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+.task-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-box li {
+  padding: 12px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.task-box li:hover {
+  background-color: #f1f1f1;
+}
+
+.task-box li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-container button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.filter-container button:hover {
+  background-color: #bbb;
+}
+

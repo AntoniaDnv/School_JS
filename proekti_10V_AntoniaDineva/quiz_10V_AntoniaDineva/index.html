@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Викторина</title>
+  <title>Обща Викторина</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="quizContainer">
-    <h1>Викторина</h1>
+    <h1 id="quizTitle">Обща Викторина</h1>
     <div id="quizItem"></div>
     <div id="navigationButtons">
       <button id="prevBtn">Предишен</button>
-      <button id="checkBtn">Провери</button>
+      <button id="checkBtn">Провери отговора</button>
       <button id="nextBtn">Следващ</button>
     </div>
     <div id="quizResult"></div>
+    <div id="statsPanel">
+  <p>Верни: <span id="correctCount">0</span></p>
+  <p>Грешни: <span id="wrongCount">0</span></p>
+  <p>Успеваемост: <span id="successRate">0</span>%</p>
+  <p>Оставащо време: <span id="timer">90</span> сек.</p>
+</div>
+<button id="restartBtn">Рестартирай</button>
+
   </div>
-  <script src="quizData.js"></script>
-<script src="script.js"></script>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
