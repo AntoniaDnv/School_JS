@@ -1,11 +1,7 @@
 function reverseStrings(array){
-    for(let i = 0; i<array.length-4; i++){
-    let el = array.pop();
-       array.unshift(el);
-    }
-        
+ 
    
-    console.log(array.join(' '));
+    console.log(array.reverse().join(' '));
 }
 reverseStrings(
 ['a',
