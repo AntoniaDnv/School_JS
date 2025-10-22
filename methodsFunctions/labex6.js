@@ -8,4 +8,4 @@ function signCheck(numOne, numTwo, numThree){
     console.log('Negative')
   }
 }
-signCheck(5, 12, -15)
+signCheck(5, 12, -15);
