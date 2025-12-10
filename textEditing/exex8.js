@@ -1,8 +1,6 @@
 function hardWord(input) {
-  let treansformed = input.join(" * ");
-  let [letter, words] = treansformed.split(" * ");
-  words = words.split(",");
-
+    let letter = input[0];
+    let words = input[1]
   for (let j = 0; j < letter.length; j++) {
     let curr = "";
     if ("_" == letter[j]) {
