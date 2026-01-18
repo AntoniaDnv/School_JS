@@ -1,18 +1,12 @@
 function extract(content) {
- let currEl = document.getElementById(id);
- let arr = [];
- for(let i = 0; i< currEl.clientHeight; i++){
-    let word = '';
-    let startIndex = 0;
-    let endIndex = 0;
-    if(currEl[i]=="("){
-        startIndex = i +1 ;
+let parameter = document.getElementById(content).textContent;
+let pattern = /\(([^)]+)\)/g;
 
-    }
-    else if(currEl[i] == ")"){
-      endIndex - i;
-      arr.push(currEl.slice(startIndex, endIndex));
-    }
- }
- console.log(arr.join())
+let result = [];
+let match = pattern.exec(parameter);
+while(match){
+  result.push(match[1]);
+  match =   pattern.exec(parameter);
+}
+return result.join('; ');
 }
