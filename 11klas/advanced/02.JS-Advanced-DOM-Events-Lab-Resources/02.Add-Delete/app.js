@@ -1,15 +1,16 @@
 function addItem() {
     let input = document.getElementById('newItemText');
-    let ul = document.getElementById('Items');
+    let ul = document.getElementById('items');
     
     let li = document.createElement('li');
     let a = document.createElement('a');
+    li.textContent = input.value;
     a.textContent = '[Delete]';
     a.setAttribute('href', '#');
-    a.addEventListener('click' (ev => {
-        console.log(ev);
+    a.addEventListener('click', (ev => {
+        ul.removeChild(li);
     }));
-    li.textContent = input.value;
+    
     
     li.appendChild(a);
     ul.appendChild(li);
