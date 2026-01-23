@@ -1,24 +1,89 @@
-#gameContainer{
-    text-align: center;
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
-#gameBoard{
-    border: 3px solid;
-    border-color: black;
-    width: 500px;
-    height: 500px;
-}
-#score{
-    font-family:"Permanent Marker", cursive;
-    font-size: 100px;
-}
-#resetBtn{
-     font-family:"Permanent Marker", cursive;
-    font-size: 22px;
-    width: 100px;
-    height: 50px;
-    border: 4px solid;
-    border-radius: 13px;
-    cursor: pointer;
-     
 
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #2a003d, #0b0014);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    animation: fadeIn 0.8s ease;
+}
+
+canvas {
+    background: linear-gradient(145deg, #1a1a1a, #111);
+    border-radius: 16px;
+    border: 3px solid #7a1fff;
+    box-shadow: 0 0 25px rgba(122, 31, 255, 0.4);
+    outline: none;
+}
+
+canvas:focus {
+    border-color: #c77dff;
+    box-shadow: 0 0 30px rgba(199, 125, 255, 0.8);
+}
+
+.score {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.resetBtn {
+    margin-top: 8px;
+    padding: 12px 32px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(145deg, #7a1fff, #5a00c8);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.resetBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(122, 31, 255, 0.5);
+}
+
+.resetBtn:active {
+    transform: scale(0.95);
+}
+
+.resetBtn:focus {
+    outline: 3px solid #c77dff;
+}
+
+.startScreen {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, #000, #050008);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
